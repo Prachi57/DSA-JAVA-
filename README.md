@@ -3,13 +3,15 @@
 
 LinkedList is a data structure in which data is stored in a linear manner. It usually contains a data field and a link to the memory location of the next mode.
 
-### Structure
+###  Definition for singly-linked list
 
 ```
-class LinkedList<E>{
-    E value;
-    LinkedList next;
-}
+public class ListNode {
+      int val;
+      ListNode next;
+      ListNode() {}
+      ListNode(int val) { this.val = val; }
+      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 ```
 
 The `next` variable points to the next node in the data structure and value stores the data. Any number of nodes can be linked in this manner. The structure will be:
@@ -23,10 +25,10 @@ The `next` variable points to the next node in the data structure and value stor
 ### File descriptions:
 
 1. [design-circular-queue](https://leetcode.com/problems/design-circular-queue)
-2. `SinglyLinkedList.java` : The classic case of single links.
-3. `CountSinglyLinkedListRecursion.java`: Recursively counts the size of a list.
-4. `CreateAndDetectLoop.java` : Create and detect a loop in a linked list.
-5. `DoublyLinkedList.java` : A modification of singly linked list which has a `prev` pointer to point to the previous node.
-6. `Merge_K_SortedLinkedlist.java` : Merges K sorted linked list with mergesort (mergesort is also the most efficient sorting algorithm for linked list).
-7. `RandomNode.java` : Selects a random node from given linked list and diplays it.
-8. `SkipList.java` : Data Structure used for storing a sorted list of elements with help of a Linked list hierarchy that connects to subsequences of elements.
+2. [design-linked-list](https://leetcode.com/problems/design-linked-list)
+3. [count-nodes-of-linked-list](https://www.geeksforgeeks.org/problems/count-nodes-of-linked-list)
+4. [linked-list-cycle](https://leetcode.com/problems/linked-list-cycle)
+5. [merge-k-sorted-lists](https://leetcode.com/problems/merge-k-sorted-lists)
+6. [remove-duplicates-from-sorted-list](https://leetcode.com/problems/remove-duplicates-from-sorted-list)
+7. [remove-duplicates-from-sorted-list-ii](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)
+8. [remove-nth-node-from-end-of-list](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
