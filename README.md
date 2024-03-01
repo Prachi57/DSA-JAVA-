@@ -22,7 +22,7 @@ The `next` variable points to the next node in the data structure and value stor
 
 ### File descriptions:
 
-1. [https://leetcode.com/problems/design-circular-queue]()
+1. [design-circular-queue](https://leetcode.com/problems/design-circular-queue)
 2. `SinglyLinkedList.java` : The classic case of single links.
 3. `CountSinglyLinkedListRecursion.java`: Recursively counts the size of a list.
 4. `CreateAndDetectLoop.java` : Create and detect a loop in a linked list.
