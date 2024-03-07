@@ -1,0 +1,45 @@
+We can solve this question by two method----
+method 1- we can solve by finding length till where th enode is given
+class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        int c=finLen(head);
+        int aLen=c-n-1,i=0;
+        if(aLen==-1){return head.next;}
+        ListNode curr=head;
+        while(i<aLen){
+            curr=curr.next;
+            i++;}
+        curr.next = curr.next.next;
+        return head;
+    }
+    public int finLen(ListNode head){
+        int c=0;
+        if(head==null) return 0;
+        ListNode curr=head;
+        while(curr!=null){
+            c++;
+            curr=curr.next;}
+        return c;
+    }
+
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+method 2- we can use fast and slow pointer-
+class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode start=new ListNode();
+        start.next=head;
+        ListNode f=start;
+        ListNode s=start;
+        for(int i=1;i<=n;i++){
+            f=f.next;
+        } 
+        while(f.next!=null){
+            s=s.next;
+            f=f.next;
+        }    
+        s.next=s.next.next;
+        return start.next;   
+        
+    }
+}
